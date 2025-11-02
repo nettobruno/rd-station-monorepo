@@ -14,6 +14,7 @@ function RecommendationType({ onRecommendationTypeChange }) {
             value="SingleProduct"
             onChange={() => onRecommendationTypeChange("SingleProduct")}
             className="form-radio h-5 w-5 text-[#11A7B6] focus:ring-[#19C1CE] border-gray-300 transition"
+            defaultChecked
           />
           <span className="ml-2 text-sm">Produto Único</span>
         </label>
