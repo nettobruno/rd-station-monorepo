@@ -5,7 +5,7 @@ const fs = require("fs");
 const app = express();
 app.use(cors({
    origin: [
-    'https://rd-station-monorepo.vercel.app/',
+    'https://rd-station-monorepo.vercel.app',
     'http://localhost:3000'
   ]
 }));

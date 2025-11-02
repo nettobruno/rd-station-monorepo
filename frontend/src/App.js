@@ -8,7 +8,6 @@ function App() {
   const handleRecommendationsUpdate = (newRecommendations) => {
     setRecommendations(newRecommendations);
   };
-console.log('API_URL:', process.env.NEXT_PUBLIC_API_URL);
 
   return (
     <div className="min-h-screen bg-[#F1F3F5] flex flex-col items-center py-12 px-4 font-sans">
