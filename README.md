@@ -21,6 +21,11 @@ Este projeto utiliza as seguintes tecnologias principais:
 - [Frontend (Vercel)](https://rd-station-monorepo.vercel.app/)
 - [Backend (Render)](https://rd-station-monorepo.onrender.com/api/products)
 
+> ⚠️ **Observação sobre o Render:**  
+> A API está hospedada no plano gratuito do [Render.com](https://render.com/).  
+> Nesse plano, o servidor entra em modo de hibernação após alguns minutos de inatividade, podendo levar **30 a 60 segundos para "acordar"** na primeira requisição.  
+> Caso o link da API demore a responder ou retorne erro temporário, basta aguardar alguns segundos e tentar novamente.
+
 ## Como Executar
 
 Clone o repositório
