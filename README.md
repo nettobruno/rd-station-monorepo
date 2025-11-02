@@ -2,6 +2,9 @@
 
 Este projeto é parte do teste técnico para a vaga de desenvolvedor front-end na RD Station. O objetivo principal é implementar a lógica de recomendação de produtos RD Station em uma aplicação web existente.
 
+<img width="1920" height="1366" alt="screencapture-rd-station-monorepo-vercel-app-2025-11-01-21_43_22" src="https://github.com/user-attachments/assets/f9afc07e-1a08-4346-827f-c2989a8d7c3b" />
+
+
 ## Tecnologias Utilizadas
 
 Este projeto utiliza as seguintes tecnologias principais:
