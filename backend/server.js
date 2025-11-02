@@ -3,7 +3,12 @@ const cors = require("cors");
 const fs = require("fs");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+   origin: [
+    'https://rd-station-monorepo.vercel.app/',
+    'http://localhost:3000'
+  ]
+}));
 app.use(express.json());
 
 const getProducts = () => {
