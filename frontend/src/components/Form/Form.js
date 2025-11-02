@@ -5,7 +5,7 @@ import useForm from '../../hooks/useForm';
 import useRecommendations from '../../hooks/useRecommendations';
 
 function Form({ onRecommendationsChange }) {
-  const { preferences, features, products } = useProducts();
+  const { preferences, features, products, error } = useProducts();
   const { formData, handleChange } = useForm({
     selectedPreferences: [],
     selectedFeatures: [],
@@ -17,11 +17,18 @@ function Form({ onRecommendationsChange }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const dataRecommendations = getRecommendations(formData);
-
     if (onRecommendationsChange) {
       onRecommendationsChange(dataRecommendations);
     }
   };
+
+  if (error) {
+    return (
+      <div className="text-center p-4 bg-red-50 border border-red-200 rounded-lg text-red-600">
+        {error}
+      </div>
+    );
+  }
 
   return (
     <form
